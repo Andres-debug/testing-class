@@ -1,6 +1,6 @@
 # Guía Completa: Pruebas de Componentes React
 
-## 📋 Índice
+## Índice
 1. [Introducción](#introducción)
 2. [Configuración del Entorno](#configuración-del-entorno)
 3. [Herramientas Principales](#herramientas-principales)
@@ -14,7 +14,7 @@
 
 ---
 
-## 🎯 Introducción
+## Introducción
 
 Las **pruebas de componentes React** son fundamentales para garantizar que la interfaz de usuario funcione correctamente. A diferencia de las pruebas unitarias tradicionales, estas pruebas verifican cómo los componentes se renderizan, responden a interacciones del usuario y manejan cambios de estado.
 
@@ -27,7 +27,7 @@ Las **pruebas de componentes React** son fundamentales para garantizar que la in
 
 ---
 
-## ⚙️ Configuración del Entorno
+## Configuración del Entorno
 
 ### Dependencias Necesarias
 
@@ -105,7 +105,7 @@ Object.defineProperty(window, 'matchMedia', {
 
 ---
 
-## 🛠️ Herramientas Principales
+##  Herramientas Principales
 
 ### 1. React Testing Library
 
@@ -139,7 +139,7 @@ await user.type(input, 'texto');
 
 ---
 
-## 📚 Conceptos Fundamentales
+## Conceptos Fundamentales
 
 ### 1. Renderizado de Componentes
 
@@ -226,7 +226,7 @@ expect(element).not.toBeVisible();
 
 ---
 
-## 🎭 Tipos de Pruebas
+## Tipos de Pruebas
 
 ### 1. Pruebas de Renderizado
 
@@ -311,7 +311,7 @@ test('es navegable por teclado', async () => {
 
 ---
 
-## 🏆 Mejores Prácticas
+##  Mejores Prácticas
 
 ### 1. Prioridad de Queries
 
@@ -406,7 +406,7 @@ describe('ContactForm', () => {
 
 ---
 
-## 💼 Ejemplos Prácticos
+##  Ejemplos Prácticos
 
 ### Ejemplo 1: Componente Button Simple
 
@@ -574,7 +574,7 @@ describe('LoginForm', () => {
 
 ---
 
-## 🔧 Patrones Comunes
+##  Patrones Comunes
 
 ### 1. Setup Común con beforeEach
 
@@ -670,7 +670,7 @@ test('carga datos y los muestra', async () => {
 
 ---
 
-## 🐛 Solución de Problemas
+##  Solución de Problemas
 
 ### Problema 1: "Cannot use import statement outside a module"
 
@@ -735,7 +735,7 @@ afterEach(() => {
 
 ---
 
-## 📖 Recursos Adicionales
+## Recursos Adicionales
 
 ### Documentación Oficial
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
@@ -764,7 +764,7 @@ afterEach(() => {
 
 ---
 
-## 🎯 Conclusión
+## Conclusión
 
 Las pruebas de componentes React son esenciales para construir aplicaciones robustas y mantenibles. Al seguir las mejores prácticas y patrones mostrados en esta guía, podrás:
 
@@ -773,6 +773,5 @@ Las pruebas de componentes React son esenciales para construir aplicaciones robu
 - **Refactorizar con confianza** sabiendo que las pruebas capturarán regresiones
 - **Documentar el comportamiento esperado** de manera ejecutable
 
-Recuerda: **"Mientras más se parezcan tus pruebas a cómo se usa tu software, más confianza te pueden dar."**
 
 ---
