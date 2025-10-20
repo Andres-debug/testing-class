@@ -1,0 +1,142 @@
+/* Estilos para CharacterCard */
+.character-card {
+  max-width: 400px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.character-card.loading,
+.character-card.error,
+.character-card.empty {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.character-card.error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.character-card.loading {
+  background: #f5f5f5;
+  color: #666;
+}
+
+.character-card.empty {
+  background: #fafafa;
+  color: #999;
+}
+
+.character-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.character-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.character-info {
+  padding: 20px;
+}
+
+.character-info h2 {
+  margin: 0 0 15px 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.character-status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.character-details {
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: bold;
+  color: #444;
+  min-width: 120px;
+}
+
+.refresh-button,
+button[data-testid="retry-button"] {
+  width: 100%;
+  padding: 12px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.refresh-button:hover,
+button[data-testid="retry-button"]:hover {
+  background: #0051cc;
+}
+
+.refresh-button:active,
+button[data-testid="retry-button"]:active {
+  transform: translateY(1px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .character-card {
+    margin: 10px;
+    max-width: none;
+  }
+  
+  .character-info {
+    padding: 15px;
+  }
+  
+  .character-info h2 {
+    font-size: 20px;
+  }
+  
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .label {
+    margin-bottom: 4px;
+    min-width: auto;
+  }
+}
